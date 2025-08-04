@@ -55,3 +55,17 @@ Write an SQL query to calculate the **total expenditure** for each department in
 | average\_expense | FLOAT   |
 
 */
+
+
+with cte as(
+select d.name as department_name, 
+ sum(e.amount) as total_expense
+ from departments d
+join expenses e on d.id = e.department_id 
+ where to_char(date, 'yyyy') = '2022'
+group by 1
+)
+
+select *, 
+ round(avg(total_expense) over(), 2) as average_expense
+from cte
