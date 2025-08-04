@@ -59,7 +59,7 @@ Write an SQL query to calculate the **total expenditure** for each department in
 
 with cte as(
 select d.name as department_name, 
- sum(e.amount) as total_expense
+ coalesce(sum(e.amount),0) as total_expense
  from departments d
 join expenses e on d.id = e.department_id 
  where to_char(date, 'yyyy') = '2022'
