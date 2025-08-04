@@ -39,4 +39,11 @@ Write an SQL query to **sample every 4th row** from the `transactions` table, **
 
 */
 
-
+with cte as
+  (
+select created_at, product_id,
+  row_number() over (order by created_at) as row_no
+  from transactions t
+  )
+select * from cte
+where row_no % 4 = 0
