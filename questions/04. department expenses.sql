@@ -1,6 +1,8 @@
-found this question on interview query - department expenses
+
 
 /*
+found this question on interview query - department expenses
+
 ### 🧾 SQL Problem Statement
 
 **Background:**
