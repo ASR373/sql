@@ -45,5 +45,5 @@ select created_at, product_id,
   row_number() over (order by created_at) as row_no
   from transactions t
   )
-select * from cte
+select created_at, product_id from cte
 where row_no % 4 = 0
