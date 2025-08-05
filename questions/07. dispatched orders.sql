@@ -62,6 +62,7 @@ left join orders o on r.id = o.restaurant_id
 select name,
 count(case when prep_time<15 then 1 end) as on_time_dispatch,
 count(case when prep_time>=15 and prep_time < 20 then 1 end) as late_dispatch,
-count(case when prep_time>20 then 1 end) as super_late_dispatch
+count(case when prep_time>=20 then 1 end) as super_late_dispatch
+  from cte
 group by 1
 
