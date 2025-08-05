@@ -16,6 +16,10 @@ Final result must be sorted by ID in ascending order internally before alternati
 
 Output should contain at least the name column (and optionally id, gender if needed for debugging).
 */
+with cte as(
+select *, row_number() over (partition by gender order by id) from students
+)
 
-
+select * from cte
+order by row_number, case gender when 'M' then 1 else 2 end
 
