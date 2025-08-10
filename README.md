@@ -1,2 +1,2 @@
 # sql
-sql practice
+sql practice pannren
