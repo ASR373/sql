@@ -1,3 +1,3 @@
 # sql
 sql practice pannren
-siu
+si
