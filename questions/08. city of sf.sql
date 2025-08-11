@@ -1,1 +1,8 @@
+/*Find the most dangerous places in SF
 
+
+Find the most dangerous places in SF based on the crime count per address and district combination.
+Output the number of incidents alongside the corresponding address and the district.
+Order records based on the number of occurrences in descending order.
+
+*/
