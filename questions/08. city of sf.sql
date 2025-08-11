@@ -6,3 +6,9 @@ Output the number of incidents alongside the corresponding address and the distr
 Order records based on the number of occurrences in descending order.
 
 */
+
+
+select address, pd_district, count(id)
+from sf_crime_incidents_2014_01
+group by 1, 2
+order by 3 desc
