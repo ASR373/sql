@@ -10,7 +10,7 @@ Return: driver_name, driver_id, total_revenue
 3) Find the passenger with the highest number of rides
 Return: passenger_name, passenger_id, number_of_rides
 
-Identify the most frequent ride distance
+4) Identify the most frequent ride distance
 Return: ride_distance, frequency
 
 Tables & Data
@@ -39,6 +39,7 @@ ride_id (PK)	driver_id	passenger_id	ride_date	ride_distance	ride_cost
 1 sol:
 
 select driver_name, max(driver_rating) from drivers
+group by 1
 
 2 sol:
 select d.driver_name, d.driver_id, sum(r.ride_cost) as total_revenue from drivers d
@@ -49,5 +50,11 @@ group by 1,2
 select p.passenger_name, p.passenger_id, count(r.ride_id) as number_of_rides from passengers p
 join rides r on p.passenger_id = r.passenger_id
 group by 1,2
-order by 3
+order by 3 desc
+limit 1
+
+4 sol:
+select ride_distance, count(*) as frequency from rides
+group by ride_distance
+order by 2 desc
 limit 1
