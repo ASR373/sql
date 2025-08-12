@@ -1,3 +1,5 @@
+day 6 of my 30 days video
+/*
 SQL Tasks
 Find the driver with the highest rating
 Return: driver_name, driver_rating
@@ -32,3 +34,6 @@ ride_id (PK)	driver_id	passenger_id	ride_date	ride_distance	ride_cost
 4	1	2	2023-06-04	7.5	15
 5	2	3	2023-06-05	15	30
 6	2	3	2023-06-07	15	30
+*/
+
+
