@@ -12,7 +12,6 @@ Return: passenger_name, passenger_id, number_of_rides
 
 4) Identify the most frequent ride distance
 Return: ride_distance, frequency
-
 Tables & Data
 Table: passengers
 passenger_id (PK)	passenger_name	passenger_rating	join_date
