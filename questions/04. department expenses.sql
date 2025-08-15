@@ -4,7 +4,6 @@
 found this question on interview query - department expenses
 
 ### 🧾 SQL Problem Statement
-
 **Background:**
 As part of the financial management in a large corporation, the CFO wants to review the **expenses in all departments for the previous financial year (2022)**.
 
