@@ -1,3 +1,4 @@
+/*
 ❓ Problem Statement
 
 We want to understand how the number of reviews affects accommodation prices. Each listing in the table airbnb_search_details should be classified into review categories based on the column number_of_reviews:
@@ -31,3 +32,5 @@ neighbourhood	text	Neighborhood
 property_type	text	Type of property
 review_scores_rating	double precision	Avg review rating
 … (other Airbnb fields)	…
+*/
+
