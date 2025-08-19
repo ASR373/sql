@@ -1,3 +1,4 @@
+/*
 Find all industries with a positive average profit. For those industries extract their lowest sale.
 Output the industry along with the corresponding lowest sale and average profit.
 Sort the output based on the lowest sales in ascending order.
@@ -25,3 +26,5 @@ Electric Utilities	32	1.27
 Software & Programming	37.9	16.95
 Investment Services	39.5	10.3
 Beverages	43.2	9.9
+*/
+
