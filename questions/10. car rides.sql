@@ -1,4 +1,4 @@
-day 6 of my 30 days video
+day 6 of my 30-day video
 /*
 SQL Tasks
 1) Find the driver with the highest rating
