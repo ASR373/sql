@@ -2,4 +2,4 @@
 
 
 select distinct neighbourhood from airbnb_search_details
-where city = 'LA' and neighbourhood <> ''
+where city = 'LA' and neighbourhood <> '''
