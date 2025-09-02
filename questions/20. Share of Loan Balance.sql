@@ -7,7 +7,7 @@ select rate_type, loan_id, balance
   cast(
   balance*100/nullif(sum(balance) over (partition by rate_type),0) 
   as numeric)
-  ,2) 
+  ,2)
   as balance_share
   from submissions
 order by 1,2 
