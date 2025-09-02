@@ -1,3 +1,8 @@
+/*
+
+Write a query to return the total loan balance for each user based on their most recent "Refinance" submission. The submissions table joins to the loans table using loan_id from submissions and id from loans.
+*/
+
 
 with cte as
 (
