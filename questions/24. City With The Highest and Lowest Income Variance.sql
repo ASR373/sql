@@ -1,3 +1,9 @@
+/*
+What cities recorded the largest growth and biggest drop in order amount between March 11, 2019, and April 11, 2019. Just compare order amounts on those two dates. 
+Your output should include the names of the cities and the amount of growth/drop.
+*/
+
+
 with cte as(
 select city_id, date(order_timestamp_utc) as date, sum(amount) as sales from postmates_orders
 group by 1,2
