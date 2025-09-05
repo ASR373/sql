@@ -13,3 +13,13 @@ group by 1
 )
 select count(request_id) from cte1
 where kk >=3
+
+----- optimized
+
+select count(*) from (
+  select request_id from redfin_call_tracking
+where extract(hour from created_on) between 3 and 6
+group by 1
+having count(*) >= 3
+  )
+as t
