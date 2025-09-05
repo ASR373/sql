@@ -10,6 +10,5 @@ cte1 as(
 select company_id, user_id, dense_rank() over(partition by company_id order by total_calls desc) as rn from cte
 )
 
-
 select * from cte1
 where rn < 3
