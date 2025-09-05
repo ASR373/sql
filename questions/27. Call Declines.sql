@@ -6,6 +6,7 @@ join rc_users ru on rc.user_id = ru.user_id
 group by 1,2
 order by 1,2
 ),
+  
 cte1 as(
 select com, 
 max(case when month = 4 then total_calls end) - max(case when month = 3 then total_calls end) as difference 
