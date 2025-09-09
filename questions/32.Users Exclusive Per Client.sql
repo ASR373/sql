@@ -3,3 +3,14 @@
 
 For each of these clients, calculate the number of such exclusive users. The output should include the client_id and the corresponding count of exclusive users.
 */
+
+with cte as(
+select client_id, user_id from fact_events
+where user_id in (
+select user_id from fact_events
+group by 1 
+having count(distinct client_id) = 1
+)
+)
+select client_id, count(distinct user_id) as exclusive_users from cte
+group by client_id
