@@ -1,3 +1,5 @@
+
+
 with cte as(
 select customer_id, count(*) as mobile_events,  dense_rank() over (order by count(*)) as rn from fact_events
 where client_id = 'mobile'
