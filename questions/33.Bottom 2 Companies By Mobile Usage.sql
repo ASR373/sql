@@ -1,4 +1,6 @@
-/*Write a query to identify all companies (customer_id) whose mobile usage ranks in the bottom two positions. Mobile usage is the count of events where client_id = 'mobile'. Companies with the same usage count should share the same rank, and all companies in the bottom two ranks should be included. Return the customer_id and event count, sorted in ascending order by the number of events.
+/*Write a query to identify all companies (customer_id) whose mobile usage ranks in the bottom two positions. Mobile usage is the count of events where client_id = 'mobile'. 
+Companies with the same usage count should share the same rank, and all companies in the bottom two ranks should be included. Return the customer_id and event count, sorted in ascending order 
+by the number of events.
 
 */
 
