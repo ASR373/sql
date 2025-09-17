@@ -10,7 +10,7 @@ left join orders o on c.customerid = o.customerid
 group by 1,2
 having sum(o.amount) > avg(o.amount)
 
-#6
+#6 For each Region, return the top 2 highest sales ordered by Amount.
 with cte as(
 select region, saleid, product, amount,
 rank() over(partition by region order by amount desc) rn
