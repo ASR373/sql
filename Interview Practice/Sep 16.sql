@@ -3,7 +3,7 @@ select dept, avg(salary) from employees
 group by dept
 having avg(salary) > 60000
 
-#5
+#5 Find customers who have spent more than the average total spending across all customers.
 select c.customerid, c.name, sum(o.amount) 
 from customer c
 left join orders o on c.customerid = o.customerid
