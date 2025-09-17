@@ -1,4 +1,4 @@
-#4
+#4 Find the average salary for each department where the average salary is greater than 60,000.
 select dept, avg(salary) from employees
 group by dept
 having avg(salary) > 60000
